@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LaunchPad helps ambitious teams turn bold ideas into meaningful momentum.">
+  <meta name="theme-color" content="#071426">
+  <title>LaunchPad — Build what's next</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#071426',
+            panel: '#0d2038',
+            cyan: '#53e5f5',
+            electric: '#6488ff'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-midnight text-slate-100 antialiased">
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="container-shell flex items-center justify-between py-5" aria-label="Main navigation">
+      <a href="#home" class="brand flex items-center gap-3" aria-label="LaunchPad home">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span class="text-xl font-extrabold tracking-tight">launch<span class="text-cyan">pad</span></span>
+      </a>
+      <button id="menu-toggle" class="menu-toggle md:hidden" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div id="nav-links" class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-cta">Let’s talk <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section container-shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</div>
+        <h1>Big ideas deserve<br><span class="gradient-text">a bold launch.</span></h1>
+        <p class="hero-description">Bring your vision to life with the clarity, tools, and momentum to move from “what if” to what’s next.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="button button-primary" id="primary-cta">Start a conversation <span aria-hidden="true">↗</span></a>
+          <a href="#features" class="button button-secondary">Explore the platform <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack" aria-hidden="true"><span>J</span><span>M</span><span>A</span><span>+</span></div>
+          <p><strong>Made for momentum.</strong><br><span>Built to help great teams go further.</span></p>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Abstract LaunchPad analytics dashboard illustration">
+        <div class="visual-glow"></div>
+        <div class="dashboard-card">
+          <div class="dashboard-top">
+            <div><span class="tiny-label">WORKSPACE OVERVIEW</span><h3>Good things are in motion.</h3></div>
+            <span class="live-pill"><i></i> LIVE</span>
+          </div>
+          <div class="metric-row">
+            <div class="metric-box"><span>Momentum score</span><strong>84.6<small> +12.8%</small></strong></div>
+            <div class="metric-box"><span>Projects moving</span><strong>12<small> +3 this week</small></strong></div>
+          </div>
+          <div class="chart-area">
+            <div class="chart-heading"><span>Growth trajectory</span><span>Last 6 months⌄</span></div>
+            <div class="chart-grid">
+              <div class="chart-y"><span>100</span><span>75</span><span>50</span><span>25</span></div>
+              <svg viewBox="0 0 460 170" role="img" aria-label="An upward-trending growth line chart" preserveAspectRatio="none">
+                <defs><linearGradient id="areaFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#53e5f5" stop-opacity=".28"/><stop offset="100%" stop-color="#53e5f5" stop-opacity="0"/></linearGradient></defs>
+                <path d="M0 139 C35 130 42 117 78 121 S130 95 155 105 S205 78 235 87 S285 56 312 68 S360 37 385 45 S430 15 460 10 L460 170 L0 170Z" fill="url(#areaFill)"/>
+                <path d="M0 139 C35 130 42 117 78 121 S130 95 155 105 S205 78 235 87 S285 56 312 68 S360 37 385 45 S430 15 460 10" fill="none" stroke="#53e5f5" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="460" cy="10" r="5" fill="#53e5f5" stroke="#0d2038" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="chart-x"><span>JAN</span><span>FEB</span><span>MAR</span><span>APR</span><span>MAY</span><span>JUN</span></div>
+          </div>
+          <div class="dashboard-bottom"><span class="status-check">✓</span><span>You're right on track</span><span class="bottom-link">View insights ↗</span></div>
+        </div>
+        <div class="float-chip chip-top"><span class="chip-icon">✦</span><div><b>Clarity unlocked</b><small>Your next move is clear</small></div></div>
+        <div class="float-chip chip-bottom"><span class="chip-bars">▂▅▇</span><div><b>+28% progress</b><small>Momentum is building</small></div></div>
+      </div>
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+    </section>
+
+    <section id="features" class="section container-shell">
+      <div class="section-heading">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> THE LAUNCHPAD ADVANTAGE</div>
+        <h2>Everything you need to<br><span class="gradient-text">make progress count.</span></h2>
+        <p>Less noise. More meaningful work. A smarter way to turn ambition into action.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon icon-cyan"><svg viewBox="0 0 24 24" fill="none"><path d="M4 17.5 9 12l3.5 3.5L20 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 7h6v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span class="card-number">01 / FOCUS</span>
+          <h3>Find your direction</h3>
+          <p>Turn scattered thoughts into a clear plan, with priorities that keep your team moving together.</p>
+          <a href="#contact" class="text-link">Find your focus <span>↗</span></a>
+        </article>
+        <article class="feature-card feature-card-highlight">
+          <div class="feature-icon icon-blue"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v4m0 10v4M3 12h4m10 0h4M5.64 5.64l2.83 2.83m7.06 7.06 2.83 2.83m0-12.72-2.83 2.83m-7.06 7.06-2.83 2.83" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/></svg></div>
+          <span class="card-number">02 / MOMENTUM</span>
+          <h3>Make progress visible</h3>
+          <p>Keep the important things in view and celebrate the small wins that add up to big change.</p>
+          <a href="#contact" class="text-link">Build momentum <span>↗</span></a>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon icon-purple"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5m0 14h16M8 15l3-4 3 2 5-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6h4v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span class="card-number">03 / GROWTH</span>
+          <h3>Grow with intention</h3>
+          <p>Learn from what works, adapt with confidence, and create room for your next big opportunity.</p>
+          <a href="#contact" class="text-link">Explore what's next <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container-shell about-layout">
+        <div class="about-visual">
+          <div class="about-orb orb-a"></div><div class="about-orb orb-b"></div>
+          <div class="about-note note-one"><span>✦</span> Think bigger</div>
+          <div class="about-note note-two"><span>↗</span> Move smarter</div>
+          <div class="about-center"><div class="center-mark"><span></span><span></span><span></span></div><strong>MAKE IT<br>HAPPEN.</strong><small>IDEAS → IMPACT</small></div>
+          <div class="about-grid-lines"></div>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> A LITTLE ABOUT US</div>
+          <h2>Built around the<br><span class="gradient-text">power of possibility.</span></h2>
+          <p>We believe the distance between a great idea and a great outcome should feel smaller. LaunchPad is a starting point for curious minds and ambitious teams who want to make their next move with purpose.</p>
+          <p>Our approach is simple: bring clarity to the complex, keep the focus on what matters, and make every step feel like progress.</p>
+          <a href="#contact" class="button button-primary">Let’s build something <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section container-shell">
+      <div class="contact-panel">
+        <div class="contact-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR MOVE</div>
+          <h2>Have a big idea?<br><span class="gradient-text">Let's get it moving.</span></h2>
+          <p>Tell us a little about what you're working on. Great things often start with a simple hello.</p>
+          <div class="contact-detail"><span class="detail-icon">✉</span><div><small>DROP US A NOTE</small><strong>hello@launchpad.example</strong></div></div>
+          <div class="contact-detail"><span class="detail-icon">✦</span><div><small>OUR APPROACH</small><strong>Curious minds. Clear direction.</strong></div></div>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-heading"><h3>Start a conversation</h3><p>We’d love to hear from you.</p></div>
+          <div class="form-row">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Alex Morgan" autocomplete="name" required>
+            <span class="field-error" id="name-error"></span>
+          </div>
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="alex@company.com" autocomplete="email" required>
+            <span class="field-error" id="email-error"></span>
+          </div>
+          <div class="form-row">
+            <label for="message">What’s on your mind?</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your idea..." required></textarea>
+            <span class="field-error" id="message-error"></span>
+          </div>
+          <button class="button button-primary submit-button" type="submit">Send your message <span aria-hidden="true">↗</span></button>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+          <p class="form-disclaimer">This demo form validates in your browser and does not send or store messages.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-shell footer-inner">
+      <a href="#home" class="brand flex items-center gap-3"><span class="brand-mark"><span></span><span></span><span></span></span><span class="text-xl font-extrabold tracking-tight">launch<span class="text-cyan">pad</span></span></a>
+      <p>Made for the ones who move ideas forward.</p>
+      <div class="footer-right"><span>© <span id="year"></span> LaunchPad. All rights reserved.</span><a href="#home" aria-label="Back to top">Back to top ↑</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
